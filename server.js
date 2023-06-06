@@ -1,9 +1,9 @@
 'use strict';
 
-require('dotenv').config()
+require('dotenv').config();
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 3002
+const PORT = process.env.PORT || 3002;
 
 app.get('/', (req, res, next) => {
   res.status(200).send('Proof of Life');
